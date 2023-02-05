@@ -1,5 +1,7 @@
 # Clip by Attribute
 
+![Cover Photo](https://github.com/jamesrobinsonvfx/clipbyattrib/blob/main/houdini/help/images/clipbyattrib-cover-resized.jpg)
+
 ## Overview
 Use the Clip SOP to cut primitives whose user-specified attribute value is outside a certain threshold.
 
