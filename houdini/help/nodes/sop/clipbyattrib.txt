@@ -1,5 +1,9 @@
 = Clip by Attribute =
 #icon: SOP/clip
+#version: 1.0
+#since: 19.0
+
+"""Clip geometry based on a point attribute."""
 
 == Overview ==
 
@@ -16,10 +20,10 @@ and the result can be a bit nicer. Often pairs well with a [Node:sop/deltamush].
 :disclosure: How it works
     This node simply does the following:
 
-    1. Store a copy of the input geometry's position `P`
-    2. Swap the [Clipping Attribute|#clip] into `@P.y`
-    3. Use the [Node:sop/clip] SOP to clip on the Y-axis by a certain [distance|#clip]
-    4. Swap the original point positions back into `P`
+    # Store a copy of the input geometry's position `P`
+    # Swap the [Clipping Attribute|#clip] into `@P.y`
+    # Use the [Node:sop/clip] SOP to clip on the Y-axis by a certain [distance|#clip]
+    # Swap the original point positions back into `P`
 
 @inputs
 Geometry to Clip:
