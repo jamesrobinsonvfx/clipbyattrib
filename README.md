@@ -5,21 +5,21 @@
 ![Cover Photo](https://github.com/jamesrobinsonvfx/clipbyattrib/blob/main/houdini/help/images/clipbyattrib-cover-resized.jpg)
 
 ## Overview
-Use the Clip SOP to cut primitives whose user-specified attribute value is outside a certain threshold.
+Use the **Clip SOP** to cut primitives whose user-specified attribute value is outside a certain threshold.
 
-Using the [Node:sop/blast] SOP with a group expression is very similar, but since it deletes
+Using the **Blast SOP** with a group expression is very similar, but since it deletes
 points/prims entirely you usually wind up with a steppy, geometric edge.
 
-Since this node uses [Node:sop/clip] instead, primitives can be cut more accurately
+Since this node uses **Clip SOP** instead, primitives can be cut more accurately
 and the result can be a bit nicer. Often pairs well with a **Delta Mush**.
 
 ## Features
 
 Hit **Enter** in the viewport to enter the [Viewer
 State](https://www.sidefx.com/docs/houdini/hom/python_states.html) and check out
-the Info Panel HUD for more info about how to use the viewport features.
+the Info Panel HUD for more info about how to use the viewer state features.
 
-* Click to sample clipping threshold
+* Click to sample clipping threshold from mesh
 * Scroll wheel to interactively fine-adjust the clipping threshold*
 * Clip by a vector attribute and hotkeys to cycle through the components
 * Info Panel
