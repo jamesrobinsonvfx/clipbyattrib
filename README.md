@@ -23,6 +23,7 @@ the Info Panel HUD for more info about how to use the viewport features.
 * Scroll wheel to interactively fine-adjust the clipping threshold*
 * Clip by a vector attribute and hotkeys to cycle through the components
 * Info Panel
+* Help card
 
 > *A little buggy with some mice at the moment, like my Logitech MX Master.
 
