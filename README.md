@@ -24,11 +24,12 @@ Single this node uses the **Clip SOP** instead, primitives can be cut more
 accurately and the result can be a bit nicer. Often pairs well with a **Delta
 Mush**
 
-[![Blast SOP]({{ images }}/compare-blast.png){:height="100%" width="100%"}]({{
-images }}/compare-blast.png)
+<img width="601" alt="Blast SOP" src="https://user-images.githubusercontent.com/32847792/216853109-687451fd-bfa5-4366-bef5-87990de86058.png">
+
 *Blast SOP. A bit jaggy.*
 
-[![Clip by Attribute]({{ images }}/compare-clipbyattrib.png){:height="100%" width="100%"}]({{ images }}/compare-clipbyattrib.png)
+<img width="601" alt="Clip by Attribute" src="https://user-images.githubusercontent.com/32847792/216853122-6bd9e97e-1410-4a01-b037-bc5aab439060.png">
+
 *Clip by Attribute. Much smoother!*
 
 ---
@@ -37,7 +38,7 @@ All the code is embedded on the node itself (help docs, viewer state, etc) but I
 
 ## Viewer State Features
 
-[![Viewer State Info Panel]({{ images }}/viewer-state-info-panel.png){:height="100%" width="100%"}]({{ images }}/viewer-state-info-panel.png)
+<img width="1136" alt="Viewer State Info Panel" src="https://user-images.githubusercontent.com/32847792/216853150-1b878c78-4b5a-4866-9b23-8deb57059156.png">
 
 - Click to sample clipping threshold from a mesh
 - Use your mouse's scroll wheel* to interactively fine-adjust the clipping threshold
