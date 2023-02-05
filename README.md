@@ -1,6 +1,6 @@
 # Clip by Attribute
 
-# [Get the HDA](https://github.com/jamesrobinsonvfx/clipbyattrib/blob/main/houdini/otls/sop_clipbyattrib_1_0.hda)
+# [Get the HDA](https://github.com/jamesrobinsonvfx/clipbyattrib/releases/download/latest/sop_clipbyattrib_1_0.hda)
 
 ![Cover Photo](https://github.com/jamesrobinsonvfx/clipbyattrib/blob/main/houdini/help/images/clipbyattrib-cover-resized.jpg)
 
