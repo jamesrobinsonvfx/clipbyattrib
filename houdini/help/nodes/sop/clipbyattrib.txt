@@ -1,0 +1,65 @@
+= Clip by Attribute =
+#icon: SOP/clip
+
+== Overview ==
+
+[Image:/images/clipbyattrib-cover-resized.jpg]
+
+Use the [Node:sop/clip] SOP to cut primitives whose [user specified attribute value|#attrib] is [above or below|#clipop] a certain [threshold|#clip].
+
+You can get a similar result using the [Node:sop/blast] SOP with a group expression, but since it deletes
+points/prims entirely you usually wind up with a steppy, geometric edge.
+
+Since this node uses [Node:sop/clip] instead, primitives can be cut more accurately
+and the result can be a bit nicer. Often pairs well with a [Node:sop/deltamush].
+
+:disclosure: How it works
+    This node simply does the following:
+
+    1. Store a copy of the input geometry's position `P`
+    2. Swap the [Clipping Attribute|#clip] into `@P.y`
+    3. Use the [Node:sop/clip] SOP to clip on the Y-axis by a certain [distance|#clip]
+    4. Swap the original point positions back into `P`
+
+@inputs
+Geometry to Clip:
+    Geometry you want to clip.
+
+@outputs
+Clipped Geometry:
+    Geometry clipped along the [Clipping Threshold|#clip]
+
+@parameters
+
+Group:
+    #id: group
+    Primitive Group selection. Contain the clipping operation to this selection.
+
+Keep:
+    #id: clipop
+    Keep primitives either *Above* or *Below* the [Clipping Threshold|#clip]
+
+Clipping Attribute:
+    #id: attrib
+    Attribute to clip by. This should be a Float or Integer Point attribute, and
+    can have anywhere from 1 to 4 components.
+
+Component:
+    #id: comp
+    When the [Clipping Attribute|#attrib] has more than one component, like
+    color (`Cd`) or normal (`N`), choose the component of the attribute that you
+    want to clip by.
+
+Clipping Threshold:
+    #id: clip
+    Only keep primitives whose [clipping attribute|#attrib] value is above/below
+    this value (depending on what [Keep|#clipop] is set to).
+
+Show Guide:
+    #id: showguide
+    Show a wireframe version of the original input geometry.
+
+@related
+* [Node:sop/clip]
+* [Node:sop/blast]
+* [Node:sop/deltamush]

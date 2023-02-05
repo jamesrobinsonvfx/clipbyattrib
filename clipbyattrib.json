@@ -1,0 +1,4 @@
+{
+    "enable": true,
+    "path": {"houdini_version >= '19.0'": "$HOUDINI_PACKAGE_PATH/clipbyattrib/houdini"}
+}
