@@ -7,7 +7,12 @@
 ## Overview
 
 This node uses the **Clip SOP** to cut primitives whose user-specified point attribute value is
-outside a certain threshold. It's one of my favorite little tools, and I really wanted
+outside a certain threshold. 
+
+![adjust-clip-threshold-5x](https://user-images.githubusercontent.com/32847792/216855886-90803980-9df8-4d8e-8454-185f31167815.gif)
+
+
+It's one of my favorite little tools, and I really wanted
 to explore creating [Viewer
 States](https://www.sidefx.com/docs/houdini/hom/python_states.html) in Houdini. I'm by ***no
 means*** a Python Viewer State expert, so keep that in
