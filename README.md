@@ -25,7 +25,7 @@ Using the **Blast Sop** with a group expression is very similar, but since it
 deletes points/prims entirely, you usually wind up with a steppy, geometric
 edge.
 
-Single this node uses the **Clip SOP** instead, primitives can be cut more
+Since this node uses the **Clip SOP** instead, primitives can be cut more
 accurately and the result can be a bit nicer. Often pairs well with a **Delta
 Mush**
 
